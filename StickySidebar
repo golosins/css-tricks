@@ -1,0 +1,18 @@
+
+.sticky-sidebar {
+    --offset: var(--space);
+    flex-grow: 1;
+    flex-basis: 300px;
+    align-self: start;
+    position: sticky;
+    top: var(--offset);
+    --space: 5rem;
+
+}
+
+/* Do not move at single column */
+@media all and (max-width: 768px) {
+   .sticky-sidebar {
+      position: static;
+   }
+}
